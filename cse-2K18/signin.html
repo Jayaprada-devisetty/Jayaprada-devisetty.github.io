@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="signin.css">
+    <title></title>
+
+  </head>
+
+  <body  class="page1">
+    <div class="layer">
+      <form class="auth"   method="post" action="signin.php" >
+        <table>
+          <tr>
+            <td><input  class="in"  type="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" placeholder="enter Email" required></input></td>
+          </tr>
+          <tr>
+            <td><input  class="in"  type="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter,
+               and at least 8 or more characters" name="pwd" placeholder="enter password" required></input></td>
+          </tr>
+          <tr>
+            <td><select  name="usertype" >
+                                 <option value="Admin">Admin</option>
+                                 <option value="Student">Student</option>
+                                 <option value="Representative">Representative</option>
+                                 </select></td>
+          </tr>
+        </table>
+
+
+        <input  class="sty" type="submit" name="signin" value="signin"></input><br>
+          <p>Don't have account?<button  onclick="location.href='signup.html'"class="sty" id="btn" type="button" name="signup" value="signup">signup</input></p>
+
+      </form>
+
+    </div>
+  </body>
+</html>
